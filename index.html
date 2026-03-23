@@ -133,42 +133,152 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Our Work</h2>
-        <p class="section-sub">A few examples of what we've been printing lately.</p>
+        <p class="section-sub">Real work from real customers — click any photo to view it full size.</p>
       </div>
-      <div class="gallery-grid">
-        <div class="gallery-item" data-label="228 Hats">
-          <div class="gallery-thumb g-hats"></div>
-          <span class="gallery-label">228 Hats &amp; Visors</span>
-        </div>
-        <div class="gallery-item" data-label="Patriotic Tees">
-          <div class="gallery-thumb g-patriotic"></div>
-          <span class="gallery-label">Patriotic Apparel</span>
-        </div>
-        <div class="gallery-item" data-label="Custom Tees">
-          <div class="gallery-thumb g-tees"></div>
-          <span class="gallery-label">Custom T-Shirts</span>
-        </div>
-        <div class="gallery-item" data-label="Business Uniforms">
-          <div class="gallery-thumb g-business"></div>
-          <span class="gallery-label">Business Uniforms</span>
-        </div>
-        <div class="gallery-item" data-label="Embroidered Hats">
-          <div class="gallery-thumb g-emb-hats"></div>
-          <span class="gallery-label">Embroidered Caps</span>
-        </div>
-        <div class="gallery-item" data-label="Aprons & Accessories">
-          <div class="gallery-thumb g-aprons"></div>
-          <span class="gallery-label">Aprons &amp; Accessories</span>
-        </div>
-        <div class="gallery-item" data-label="Hoodies">
-          <div class="gallery-thumb g-hoodies"></div>
-          <span class="gallery-label">Hoodies &amp; Sweatshirts</span>
-        </div>
-        <div class="gallery-item" data-label="Event Shirts">
-          <div class="gallery-thumb g-events"></div>
-          <span class="gallery-label">Event &amp; Fundraiser Shirts</span>
-        </div>
+
+      <!-- Filter Buttons -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="tshirts">T-Shirts</button>
+        <button class="filter-btn" data-filter="hats">Hats</button>
+        <button class="filter-btn" data-filter="hoodies">Hoodies</button>
+        <button class="filter-btn" data-filter="polos">Polos &amp; Jackets</button>
+        <button class="filter-btn" data-filter="embroidery">Embroidery</button>
       </div>
+
+      <!-- Photo Grid -->
+      <div class="gallery-grid" id="gallery-grid">
+
+        <!-- HATS -->
+        <div class="gallery-item" data-cat="hats embroidery" data-label="Embroidered Trucker Hats">
+          <img src="images/902259805242715.jpg" alt="d'Iberville embroidered trucker hat" loading="lazy" />
+          <span class="gallery-label">Embroidered Hat</span>
+        </div>
+        <div class="gallery-item" data-cat="hats embroidery" data-label="D&L Auto Body Hats">
+          <img src="images/843929371075759.jpg" alt="D&L Auto Body embroidered hats" loading="lazy" />
+          <span class="gallery-label">Business Hats</span>
+        </div>
+        <div class="gallery-item" data-cat="hats embroidery" data-label="J&S Marine Services Hats">
+          <img src="images/984767910325237.jpg" alt="J&S Marine Services embroidered hats" loading="lazy" />
+          <span class="gallery-label">Marine Hats</span>
+        </div>
+        <div class="gallery-item" data-cat="hats embroidery" data-label="PPCI Embroidered Beanie">
+          <img src="images/843929321075764.jpg" alt="PPCI embroidered red beanie" loading="lazy" />
+          <span class="gallery-label">Embroidered Beanie</span>
+        </div>
+        <div class="gallery-item" data-cat="hats embroidery" data-label="Army National Guard Hats">
+          <img src="images/1081102650691762.jpg" alt="MS Army National Guard leather patch hats" loading="lazy" />
+          <span class="gallery-label">Patch Hats</span>
+        </div>
+        <div class="gallery-item" data-cat="hats embroidery" data-label="Riggins Renovations Hat">
+          <img src="images/993978689404159.jpg" alt="Riggins Renovations embroidered hat" loading="lazy" />
+          <span class="gallery-label">Contractor Hat</span>
+        </div>
+
+        <!-- T-SHIRTS -->
+        <div class="gallery-item" data-cat="tshirts" data-label="Tractor Tree & Turf Tee">
+          <img src="images/763919099076787.jpg" alt="Tractor Tree & Turf orange safety tee" loading="lazy" />
+          <span class="gallery-label">Work Tees</span>
+        </div>
+        <div class="gallery-item" data-cat="tshirts" data-label="Sugaring NYC Pink Tees">
+          <img src="images/975152937953401.jpg" alt="Sugaring NYC pink tees" loading="lazy" />
+          <span class="gallery-label">Custom Tees</span>
+        </div>
+        <div class="gallery-item" data-cat="tshirts" data-label="Gulf Coast Cabinets Tees">
+          <img src="images/1012299544238740.jpg" alt="Gulf Coast Cabinets & Millworks tees" loading="lazy" />
+          <span class="gallery-label">Business Tees</span>
+        </div>
+        <div class="gallery-item" data-cat="tshirts" data-label="Warrior Softball Tee">
+          <img src="images/902259725242723.jpg" alt="Warrior Softball tee" loading="lazy" />
+          <span class="gallery-label">Sports Tee</span>
+        </div>
+        <div class="gallery-item" data-cat="tshirts" data-label="D'Iberville Football Tee">
+          <img src="images/1038070661661628.jpg" alt="D'Iberville Football tee" loading="lazy" />
+          <span class="gallery-label">School Spirit</span>
+        </div>
+        <div class="gallery-item" data-cat="tshirts" data-label="Lady Warriors Volleyball">
+          <img src="images/1038070741661620.jpg" alt="Lady Warriors Volleyball tee" loading="lazy" />
+          <span class="gallery-label">Team Tees</span>
+        </div>
+        <div class="gallery-item" data-cat="tshirts" data-label="HandyMan House Services">
+          <img src="images/985467056921989.jpg" alt="HandyMan House Services red tees" loading="lazy" />
+          <span class="gallery-label">Contractor Tees</span>
+        </div>
+        <div class="gallery-item" data-cat="tshirts" data-label="Weathered House Tee">
+          <img src="images/902259741909388.jpg" alt="The Weathered House navy tee" loading="lazy" />
+          <span class="gallery-label">Business Tee</span>
+        </div>
+        <div class="gallery-item" data-cat="tshirts" data-label="Ocean Springs Wild Flier">
+          <img src="images/1012299640905397.jpg" alt="Wild Flier Ocean Springs tee" loading="lazy" />
+          <span class="gallery-label">Local Tee</span>
+        </div>
+        <div class="gallery-item" data-cat="tshirts" data-label="Riggins Renovations Tee">
+          <img src="images/993978656070829.jpg" alt="Riggins Renovations gray tee" loading="lazy" />
+          <span class="gallery-label">Contractor Tee</span>
+        </div>
+        <div class="gallery-item" data-cat="tshirts" data-label="High Tide Cannabis Tees">
+          <img src="images/975152954620066.jpg" alt="High Tide Cannabis tees" loading="lazy" />
+          <span class="gallery-label">Custom Tees</span>
+        </div>
+        <div class="gallery-item" data-cat="tshirts" data-label="McElroy's 50th Anniversary">
+          <img src="images/1055443043257723.jpg" alt="McElroy's Harbor House 50th anniversary tee" loading="lazy" />
+          <span class="gallery-label">Event Tee</span>
+        </div>
+        <div class="gallery-item" data-cat="tshirts" data-label="Star Ruby Cafe Tees">
+          <img src="images/1081102087358485.jpg" alt="Star Ruby Cafe gray tees" loading="lazy" />
+          <span class="gallery-label">Restaurant Tees</span>
+        </div>
+        <div class="gallery-item" data-cat="tshirts" data-label="Jamaican Jerk BBQ Tees">
+          <img src="images/1081102104025150.jpg" alt="Jamaican Jerk BBQ black tees" loading="lazy" />
+          <span class="gallery-label">Restaurant Tees</span>
+        </div>
+        <div class="gallery-item" data-cat="tshirts" data-label="Walmart Anniversary Tees">
+          <img src="images/1081102634025097.jpg" alt="Walmart 10yr Anniversary tees" loading="lazy" />
+          <span class="gallery-label">Corporate Tees</span>
+        </div>
+        <div class="gallery-item" data-cat="tshirts" data-label="IGY6 Automation Tees">
+          <img src="images/1012299690905392.jpg" alt="IGY6 Automation black tees" loading="lazy" />
+          <span class="gallery-label">Custom Tees</span>
+        </div>
+
+        <!-- HOODIES -->
+        <div class="gallery-item" data-cat="hoodies" data-label="Lewis Family Gathering Hoodie">
+          <img src="images/764722745663089.jpg" alt="Lewis Family Gathering purple hoodie" loading="lazy" />
+          <span class="gallery-label">Family Reunion Hoodie</span>
+        </div>
+        <div class="gallery-item" data-cat="hoodies" data-label="Pink Hoodie">
+          <img src="images/991066096362085.jpg" alt="Pink printed hoodie" loading="lazy" />
+          <span class="gallery-label">Custom Hoodie</span>
+        </div>
+        <div class="gallery-item" data-cat="hoodies" data-label="359 TRS Military Hoodie">
+          <img src="images/1049934930475201.jpg" alt="359 TRS Det 1 NAS Pensacola hoodie" loading="lazy" />
+          <span class="gallery-label">Military Hoodie</span>
+        </div>
+        <div class="gallery-item" data-cat="hoodies" data-label="Army National Guard Hoodie">
+          <img src="images/1049934960475198.jpg" alt="MS Army National Guard olive hoodie" loading="lazy" />
+          <span class="gallery-label">Military Hoodie</span>
+        </div>
+        <div class="gallery-item" data-cat="hoodies" data-label="St. Martin Jackets Hoodie">
+          <img src="images/1038070771661617.jpg" alt="St. Martin Yellow Jackets gray hoodie" loading="lazy" />
+          <span class="gallery-label">School Hoodie</span>
+        </div>
+
+        <!-- POLOS & JACKETS -->
+        <div class="gallery-item" data-cat="polos embroidery" data-label="Allperil Polos">
+          <img src="images/975152984620063.jpg" alt="Allperil embroidered navy polos" loading="lazy" />
+          <span class="gallery-label">Business Polos</span>
+        </div>
+        <div class="gallery-item" data-cat="polos" data-label="Sport Jackets">
+          <img src="images/843929337742429.jpg" alt="Embroidered sport jackets" loading="lazy" />
+          <span class="gallery-label">Jackets</span>
+        </div>
+        <div class="gallery-item" data-cat="polos" data-label="Campaign Polo & Vest">
+          <img src="images/843928137742549.jpg" alt="Red polo and puffer vest" loading="lazy" />
+          <span class="gallery-label">Polo &amp; Vest</span>
+        </div>
+
+      </div><!-- end gallery-grid -->
+
       <div class="gallery-cta">
         <a href="https://www.facebook.com/ShirtShackBiloxi/photos" target="_blank" rel="noopener" class="btn btn--teal">
           See More on Facebook →
@@ -176,6 +286,17 @@
       </div>
     </div>
   </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lb-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lb-prev" aria-label="Previous">&#8249;</button>
+    <button class="lightbox-next" id="lb-next" aria-label="Next">&#8250;</button>
+    <div class="lightbox-inner">
+      <img src="" alt="" id="lb-img" />
+      <p class="lb-caption" id="lb-caption"></p>
+    </div>
+  </div>
 
   <!-- ===== ABOUT ===== -->
   <section class="about" id="about">
